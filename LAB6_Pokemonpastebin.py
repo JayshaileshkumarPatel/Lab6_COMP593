@@ -33,7 +33,7 @@ def get_user_info(user_num):
 def get_title_and_text(user_dict):
     title = user_dict['name'] + "'s information"
     body_text = "Name: " + user_dict['name'] + "\n"
-    body_text += "Abilities: " + user_dict['abilities']['ability']['name']
+    body_text += "Abilities: " + user_dict['abilities'][0]['ability']['name']
     return (title, body_text)
 
 def post_to_pastebin(title, body_text):
